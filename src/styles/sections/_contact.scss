@@ -42,37 +42,18 @@ $textColor: #464443;
         outline: none;
       }
     }
-    input[type="date"] {
-      color: $textColor;
-      //   color: gold;
-      &::before {
-        content: attr(data-placeholder);
-        position: absolute;
-        left: 12px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: gray;
-        pointer-events: none;
-        opacity: 1;
-        transition: 0.2s ease;
-      }
-
-      &:focus::before,
-      &:not(:placeholder-shown)::before {
-        opacity: 0;
-      }
-    }
     .button {
       margin-top: 1rem;
     }
   }
-}
-h2.react-datepicker__current-month {
-  font-size: 1rem !important;
-}
 
-@media (min-width: $breakpoint-md) {
-  .contactForm {
-    width: 480px;
+  h2.react-datepicker__current-month {
+    font-size: 1rem !important;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    .contactForm {
+      width: 480px;
+    }
   }
 }
