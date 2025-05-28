@@ -1,7 +1,11 @@
+@use "@/styles/variables" as *;
 #cta {
   background-color: #464443;
   gap: 3rem;
   h2 {
     white-space: pre-line;
+  }
+
+  @media (min-width: $breakpoint-md) {
   }
 }

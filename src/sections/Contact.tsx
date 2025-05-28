@@ -126,12 +126,7 @@ export const Contact = () => {
           {isLoading ? "Sending..." : "Submit"}
         </button>
       </form>
-      <ToastContainer
-        // position="bottom-right"
-        hideProgressBar
-        closeOnClick
-        pauseOnFocusLoss={false}
-      />
+      <ToastContainer hideProgressBar closeOnClick pauseOnFocusLoss={false} />
     </section>
   );
 };

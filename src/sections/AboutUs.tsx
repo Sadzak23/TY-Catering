@@ -4,7 +4,6 @@ import img from "@/assets/img/aboutUs.jpg";
 
 export const AboutUs: FC = () => (
   <section id="about">
-    <Image aria-hidden src={img} alt="About us" width={500} />
     <article>
       <h2>About us</h2>
       <p>
@@ -16,5 +15,6 @@ export const AboutUs: FC = () => (
         memorable experience.`}
       </p>
     </article>
+    <Image aria-hidden src={img} alt="About us" width={500} />
   </section>
 );

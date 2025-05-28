@@ -1,2 +1,7 @@
-// #calculator {
-// }
+@use "@/styles/variables" as *;
+
+#calculator {
+  @media (max-width: $breakpoint-md) {
+    gap: 1rem;
+  }
+}

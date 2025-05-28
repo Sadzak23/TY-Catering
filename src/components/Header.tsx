@@ -14,7 +14,7 @@ export const Header: FC = () => {
   ];
   return (
     <header>
-      <Image src={logo} alt="TYC" width={180} height={38} priority />
+      <Image src={logo} alt="TYC" height={38} priority />
       <nav>
         {navItems.map((item) => (
           <a key={item.name} href={item.href}>
