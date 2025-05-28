@@ -13,7 +13,7 @@ export const HeroSection: FC = () => {
     "BIRTHDAY",
   ];
   return (
-    <section className="hero">
+    <section id="home" className="hero">
       <div className="overlay" />
       <div className="content">
         <div className="title">
@@ -23,9 +23,6 @@ export const HeroSection: FC = () => {
         <Link href="#calculator">
           <Button label="Calculate your next event" />
         </Link>
-        {/* <p style={{ fontSize: "20px", color: "#333", fontWeight: 800 }}>
-          TEST <span style={{ fontSize: "1.25rem" }}>TEST</span>{" "}
-        </p> */}
       </div>
       <div className="banner">
         <p>
