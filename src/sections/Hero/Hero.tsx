@@ -1,5 +1,4 @@
 import Link from "next/link";
-import styles from "./hero.module.scss";
 import { FC } from "react";
 import { Button } from "@/components/Button";
 
@@ -14,10 +13,10 @@ export const HeroSection: FC = () => {
     "BIRTHDAY",
   ];
   return (
-    <section className={styles.hero}>
-      <div className={styles.overlay} />
-      <div className={styles.content}>
-        <div className={styles.title}>
+    <section className="hero">
+      <div className="overlay" />
+      <div className="content">
+        <div className="title">
           <h1>Truly Yours</h1>
           <h1>Catering</h1>
         </div>
@@ -28,7 +27,7 @@ export const HeroSection: FC = () => {
           TEST <span style={{ fontSize: "1.25rem" }}>TEST</span>{" "}
         </p> */}
       </div>
-      <div className={styles.banner}>
+      <div className="banner">
         <p>
           {services.map((e) => (
             <span key={e}>{e}</span>
