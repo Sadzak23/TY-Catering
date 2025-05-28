@@ -1,0 +1,23 @@
+button {
+  background-color: var(--primary);
+  font-size: 14px;
+  color: #e4e4e4;
+  padding: 14px 36px;
+  border: none;
+  cursor: pointer;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  &:hover {
+    background-color: var(--primaryAlt);
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+a {
+  user-select: none;
+  -webkit-user-drag: none;
+}

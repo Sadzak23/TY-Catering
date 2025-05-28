@@ -1,0 +1,32 @@
+@use "@/styles/variables" as *;
+
+h1 {
+  color: #303030;
+  font-weight: 400;
+  font-size: 3rem;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+  }
+}
+h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+h3 {
+  color: #d4d4d4;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
