@@ -1,15 +1,16 @@
 import Image from "next/image";
 import { FC } from "react";
 import logo from "../assets/img/tyc.svg";
-import { Button } from "@/components/Button";
+// import { Button } from "@/components/Button";
 
 export const Header: FC = () => {
   const navItems = [
-    { name: "HOME", href: "/" },
-    { name: "ABOUT US", href: "/about" },
-    { name: "MENU", href: "/menu" },
-    { name: "SIGNATURE SERVICES", href: "/service" },
-    { name: "CONTACT", href: "/contact" },
+    { name: "HOME", href: "#home" },
+    { name: "ABOUT US", href: "#about" },
+    // { name: "PORTFOLIO", href: "#portfolio" },
+    // { name: "MENU", href: "/menu" },
+    // { name: "SIGNATURE SERVICES", href: "/service" },
+    { name: "CONTACT", href: "#contact" },
   ];
   return (
     <header>
@@ -21,7 +22,7 @@ export const Header: FC = () => {
           </a>
         ))}
       </nav>
-      <Button label="Book a Call" />
+      {/* <Button label="Book a Call" /> */}
     </header>
   );
 };
