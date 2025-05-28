@@ -62,14 +62,17 @@ $textColor: #464443;
         opacity: 0;
       }
     }
-    button {
+    .button {
       margin-top: 1rem;
     }
   }
+}
+h2.react-datepicker__current-month {
+  font-size: 1rem !important;
+}
 
-  @media (min-width: $breakpoint-md) {
-    .contactForm {
-      width: 480px;
-    }
+@media (min-width: $breakpoint-md) {
+  .contactForm {
+    width: 480px;
   }
 }

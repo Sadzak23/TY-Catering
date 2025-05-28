@@ -1,8 +1,13 @@
 "use client";
 
 import "react-toastify/dist/ReactToastify.css";
+import "react-datepicker/dist/react-datepicker.css";
+
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
+import DatePicker from "react-datepicker";
+import dayjs from "dayjs";
+import { Button } from "@/components/Button";
 
 interface FormData {
   name: string;
@@ -96,13 +101,20 @@ export const Contact = () => {
         />
 
         <h4>Event Type</h4>
-        <input
-          type="date"
-          name="eventDate"
-          min={new Date().toISOString().split("T")[0]}
+        <DatePicker
+          selected={
+            formData.eventDate ? dayjs(formData.eventDate).toDate() : null
+          }
+          onChange={(date: Date | null) =>
+            setFormData((prev) => ({
+              ...prev,
+              eventDate: dayjs(date).format("MMM DD, YYYY"),
+            }))
+          }
+          placeholderText="Event Date"
+          minDate={new Date()}
+          className="customDateInput"
           required
-          value={formData.eventDate}
-          onChange={handleChange}
         />
         <input
           type="text"
@@ -122,9 +134,11 @@ export const Contact = () => {
           onChange={handleChange}
         />
 
-        <button type="submit" disabled={isLoading}>
-          {isLoading ? "Sending..." : "Submit"}
-        </button>
+        <Button
+          label={isLoading ? "Sending..." : "Submit"}
+          type="submit"
+          disabled={isLoading}
+        />
       </form>
       <ToastContainer hideProgressBar closeOnClick pauseOnFocusLoss={false} />
     </section>

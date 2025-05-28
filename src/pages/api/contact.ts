@@ -1,4 +1,3 @@
-import dayjs from "dayjs";
 import type { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
 
@@ -30,9 +29,7 @@ export default async function handler(
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Phone:</strong> ${phone ?? "/"}</p>
       <h2>Event Info</h2>
-      <p><strong>Event Date:</strong> ${dayjs(eventDate).format(
-        "MMM DD, YYYY"
-      )}</p>
+      <p><strong>Event Date:</strong> ${eventDate}</p>
       <p><strong>Guests:</strong> ${guests}</p>
       <h2>Additional Message</h2>
       <p>${message ?? "/"}</p>
