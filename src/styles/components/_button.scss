@@ -1,20 +1,27 @@
-button {
+button:not(.Toastify__close-button) {
   background-color: var(--primary);
   font-size: 14px;
   color: #e4e4e4;
-  padding: 14px 36px;
+  padding: 0 3rem;
   border: none;
+  height: 3rem;
   cursor: pointer;
   text-wrap: nowrap;
   text-transform: uppercase;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-family: Poppins;
-  &:hover {
-    background-color: var(--primaryAlt);
+  &:disabled {
+    opacity: 0.5;
+    cursor: wait;
   }
-  &:active {
-    transform: translateY(2px);
+  &:not(:disabled) {
+    &:hover {
+      background-color: var(--primaryAlt);
+    }
+    &:active {
+      transform: translateY(2px);
+    }
   }
 }
 

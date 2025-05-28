@@ -1,0 +1,45 @@
+$textColor: #464443;
+
+#contact {
+  background-color: #cec7c1;
+  color: $textColor;
+  gap: 1rem;
+  h2 {
+    color: $textColor;
+    font-weight: bold;
+  }
+  h4 {
+    color: $textColor;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 0.5rem;
+    width: 480px;
+    h4,
+    p {
+      font-family: Poppins;
+    }
+
+    input,
+    textarea {
+      background-color: white;
+      padding: 0.5rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      min-height: 40px;
+      font-family: Poppins;
+      color: $textColor;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+    button {
+      margin-top: 1rem;
+    }
+  }
+}
