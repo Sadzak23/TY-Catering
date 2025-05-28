@@ -1,4 +1,3 @@
-import { popins } from "@/app/layout";
 import type { FC } from "react";
 
 interface Props {
@@ -7,7 +6,5 @@ interface Props {
 }
 
 export const Button: FC<Props> = ({ label, onClick }) => (
-  <button className={popins.className} onClick={onClick}>
-    {label}
-  </button>
+  <button onClick={onClick}>{label}</button>
 );

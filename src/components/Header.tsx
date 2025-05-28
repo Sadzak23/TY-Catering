@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
 import logo from "../assets/img/tyc.svg";
-import { popins } from "@/app/layout";
 import { Button } from "@/components/Button";
 
 export const Header: FC = () => {
@@ -15,7 +14,7 @@ export const Header: FC = () => {
   return (
     <header>
       <Image src={logo} alt="TYC" width={180} height={38} priority />
-      <nav className={popins.className}>
+      <nav>
         {navItems.map((item) => (
           <a key={item.name} href={item.href}>
             {item.name}

@@ -2,20 +2,9 @@ import "./globals.scss";
 import "@/styles/App.scss";
 
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Poppins } from "next/font/google";
 import { Header } from "../components/Header";
 import { ReactNode } from "react";
-
-const cormorant = Cormorant_Garamond({
-  variable: "--font-abhaya-libre",
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin"],
-});
-export const popins = Poppins({
-  variable: "--font-poppins",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
+import { cormorant } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Truly Yours Catering",
