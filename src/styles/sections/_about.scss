@@ -1,37 +1,31 @@
 @use "@/styles/variables" as *;
 
 #about {
-  article {
-    background-color: var(--backgroundAlt);
-    color: #fff;
-    font-family: Poppins;
-    font-size: 1rem;
-    width: 100%;
-    text-align: justify;
-    padding: 2rem;
+  img {
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
   }
-
   @media (max-width: $breakpoint-md) {
     .content {
+      display: flex;
+      flex-direction: column;
       padding: 0;
-      img {
-        width: 100vw;
-        height: auto;
-      }
     }
   }
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: $breakpoint-lg) {
     .content {
       display: flex;
       align-items: flex-start;
-      flex-direction: row-reverse;
+      flex-direction: row;
       gap: 4rem;
+      img {
+        width: 500px;
+      }
       article {
         margin-top: 8rem;
-        padding: 5rem;
         width: 430px;
-        font-size: 1.25rem;
       }
     }
   }

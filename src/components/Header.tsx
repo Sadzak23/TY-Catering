@@ -13,7 +13,7 @@ export const Header: FC = () => {
     { name: "ABOUT US", href: "#about" },
     // { name: "PORTFOLIO", href: "#portfolio" },
     { name: "MENU", href: "#menu" },
-    // { name: "SIGNATURE SERVICES", href: "#service" },
+    { name: "SIGNATURE SERVICES", href: "#services" },
     { name: "CONTACT", href: "#contact" },
   ];
 

@@ -1,3 +1,5 @@
+@use "@/styles/variables" as *;
+
 .button {
   background-color: var(--primary);
   font-size: 14px;
@@ -22,6 +24,9 @@
     &:active {
       transform: translateY(2px);
     }
+  }
+  @media (min-width: $breakpoint-lg) {
+    font-size: 1rem;
   }
 }
 

@@ -2,6 +2,7 @@
 @use "./globals";
 
 @use "./common/typography";
+@use "./common/elements";
 
 @use "./components/button";
 @use "./components/header";
@@ -12,4 +13,5 @@
 @use "./sections/cta";
 @use "./sections/hero";
 @use "./sections/menu";
+@use "./sections/services";
 // @use "./sections/portfolio";
