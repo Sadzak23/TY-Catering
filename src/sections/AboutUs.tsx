@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { FC } from "react";
-import img from "@/assets/img/aboutUs.jpg";
+import img from "@/assets/img/aboutUs.webp";
 
 export const AboutUs: FC = () => (
   <section id="about">

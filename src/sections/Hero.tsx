@@ -17,8 +17,8 @@ export const HeroSection: FC = () => {
       <div className="overlay" />
       <div className="content">
         <div className="title">
-          <h1>Truly Yours</h1>
-          <h1>Catering</h1>
+          <h1>{`Truly Yours
+          Catering`}</h1>
         </div>
         <Link href="#calculator">
           <Button label="Calculate your next event" />
