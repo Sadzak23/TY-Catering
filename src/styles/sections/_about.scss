@@ -9,33 +9,29 @@
     width: 100%;
     text-align: justify;
     padding: 2rem;
-    h2 {
-      text-align: center;
-      font-family: "Mr De Haviland", cursive;
-      font-size: 3rem;
-      margin-bottom: 0.75rem;
-    }
   }
 
   @media (max-width: $breakpoint-md) {
-    padding: 0;
-    img {
-      width: 100vw;
-      height: auto;
+    .content {
+      padding: 0;
+      img {
+        width: 100vw;
+        height: auto;
+      }
     }
   }
 
   @media (min-width: $breakpoint-md) {
-    align-items: flex-start;
-    flex-direction: row-reverse;
-    gap: 4rem;
-    article {
-      margin-top: 8rem;
-      padding: 5rem;
-      width: 430px;
-      font-size: 1.25rem;
-      h2 {
-        margin-bottom: 1.5rem;
+    .content {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row-reverse;
+      gap: 4rem;
+      article {
+        margin-top: 8rem;
+        padding: 5rem;
+        width: 430px;
+        font-size: 1.25rem;
       }
     }
   }
