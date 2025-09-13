@@ -1,0 +1,80 @@
+@use "@/styles/variables" as *;
+
+#menu {
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .item {
+      display: flex;
+      .item-content {
+        background-color: var(--backgroundAlt);
+        color: white;
+        font-family: Poppins;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-content: start;
+        gap: 32px;
+        p {
+          font-size: 1rem;
+          line-height: 1.7rem;
+        }
+        .label {
+          text-align: left;
+          white-space: pre-line;
+          span {
+            font-size: 14px;
+            font-style: italic;
+          }
+        }
+        .price {
+          text-align: right;
+        }
+      }
+      .menu-content {
+        gap: 16px 32px;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    h4 {
+      font-size: 1.3rem;
+    }
+    .items .item {
+      flex-direction: column;
+      img {
+        width: 100vw;
+      }
+
+      .item-content {
+        padding: 16px;
+        .label {
+          span {
+            font-size: 12px;
+          }
+        }
+        p {
+          font-size: 0.9rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    h4 {
+      font-size: 1.5rem;
+    }
+    .items .item {
+      gap: 16px;
+      img {
+        width: 412px;
+      }
+      .item-content {
+        padding: 32px 48px;
+      }
+    }
+  }
+}

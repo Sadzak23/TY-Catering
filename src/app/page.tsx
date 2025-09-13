@@ -5,6 +5,7 @@ import { AboutUs } from "@/sections/AboutUs";
 import { Calculator } from "@/sections/Calculator";
 import { Contact } from "@/sections/Contact";
 import { CallToAction } from "@/sections/CTA";
+import { Menu } from "@/sections/Menu";
 
 const Home: FC = () => (
   <>
@@ -12,6 +13,7 @@ const Home: FC = () => (
     <AboutUs />
     {/* <Portfolio /> */}
     <CallToAction />
+    <Menu />
     <Calculator />
     <Contact />
   </>

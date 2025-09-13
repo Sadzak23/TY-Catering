@@ -1,5 +1,10 @@
 // utils/fonts.ts
-import { Cormorant_Garamond, Poppins, Mr_De_Haviland } from "next/font/google";
+import {
+  Cormorant_Garamond,
+  Poppins,
+  Mr_De_Haviland,
+  Carattere,
+} from "next/font/google";
 
 export const cormorant = Cormorant_Garamond({
   variable: "--font-abhaya-libre",
@@ -15,5 +20,11 @@ export const poppins = Poppins({
 export const handwriting = Mr_De_Haviland({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-poppins",
+  variable: "--font-handwriting",
+});
+
+export const carattere = Carattere({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-carattere",
 });

@@ -73,7 +73,7 @@ export const Contact = () => {
   return (
     <section id="contact">
       <form className="contactForm" onSubmit={handleSubmit}>
-        <h2>Contact us</h2>
+        <h3>Contact us</h3>
         <p>we are excited to get planning!</p>
         <h4>Contact Information</h4>
         <input

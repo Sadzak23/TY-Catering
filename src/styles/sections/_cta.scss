@@ -1,6 +1,7 @@
 @use "@/styles/variables" as *;
+
 #cta {
-  background-color: #464443;
+  background-color: var(--backgroundAlt);
   gap: 3rem;
   h2 {
     white-space: pre-line;
