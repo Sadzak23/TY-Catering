@@ -7,6 +7,10 @@
     gap: 16px;
     .item {
       display: flex;
+      img {
+        height: auto;
+        object-fit: contain;
+      }
       .item-content {
         background-color: var(--backgroundAlt);
         color: white;
@@ -47,7 +51,6 @@
       img {
         width: 100vw;
       }
-
       .item-content {
         padding: 16px;
         .label {
