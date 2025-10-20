@@ -1,6 +1,5 @@
 "use client";
 
-import "react-toastify/dist/ReactToastify.css";
 import "react-datepicker/dist/react-datepicker.css";
 
 import { useState } from "react";

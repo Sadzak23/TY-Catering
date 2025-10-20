@@ -1,18 +1,16 @@
 @use "@/styles/variables" as *;
 
-$textColor: #464443;
-
 #contact {
   background-color: #cec7c1;
-  color: $textColor;
+  color: var(--textColor);
   gap: 1rem;
   h3 {
-    color: $textColor;
+    color: var(--textColor);
     font-weight: bold;
     font-size: 2rem;
   }
   h4 {
-    color: $textColor;
+    color: var(--textColor);
     margin-top: 1.5rem;
     font-size: 1rem;
   }
@@ -25,22 +23,6 @@ $textColor: #464443;
     h4,
     p {
       font-family: Poppins;
-    }
-
-    input,
-    textarea {
-      background-color: white;
-      padding: 0.5rem 1rem;
-      border: 1px solid #ccc;
-      border-radius: 0.5rem;
-      font-size: 1rem;
-      min-height: 40px;
-      font-family: Poppins;
-      color: $textColor;
-      width: 100%;
-      &:focus-visible {
-        outline: none;
-      }
     }
     .button {
       margin-top: 1rem;

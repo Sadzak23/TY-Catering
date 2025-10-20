@@ -1,7 +1,8 @@
 :root {
   --primary: #8d8271;
   --primaryAlt: #71685a;
-  --backgroundAlt: #464344;
+  --textColor: #464344;
+  --backgroundAlt: var(--textColor);
 }
 
 $breakpoint-sm: 640px;

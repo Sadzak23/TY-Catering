@@ -1,0 +1,28 @@
+input,
+textarea,
+select {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  min-height: 40px;
+  font-family: Poppins;
+  color: var(--textColor);
+  width: 100%;
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+label {
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+select.time {
+  min-width: 120px;
+  max-width: 120px;
+}
