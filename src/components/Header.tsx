@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { FC, useState } from "react";
 import logo from "../assets/img/tyc.svg";
-// import { Button } from "@/components/Button";
 
 export const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

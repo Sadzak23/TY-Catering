@@ -1,4 +1,3 @@
-// utils/fonts.ts
 import {
   Cormorant_Garamond,
   Poppins,

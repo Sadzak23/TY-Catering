@@ -1,3 +1,21 @@
+export const calculatorData = {
+  cocktail: {
+    savory: 2.5,
+    sweet: 2.5,
+  },
+  bar: {
+    SIMPLE: 10,
+    STANDARD: 13,
+    PREMIUM: 15,
+  },
+  dinner: {
+    PLATED: 90,
+    BUFFET: 65,
+    extraSalad: 5,
+    extraMain: 20,
+  },
+};
+
 export const menuItems = [
   {
     label: "Plate or buffet lunch",

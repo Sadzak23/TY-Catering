@@ -1,23 +1,19 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  if (req.method !== "POST") return res.status(405).end();
-
-  const { name, email, phone, eventDate, guests, message } = req.body;
-
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
-    },
-  });
-
+export async function POST(request: NextRequest) {
   try {
+    const { name, email, phone, eventDate, guests, message } =
+      await request.json();
+
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
+
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_TO,
@@ -37,9 +33,9 @@ export default async function handler(
       `,
     });
 
-    res.status(200).json({ success: true });
+    return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Email send error:", error);
-    res.status(500).json({ error: "Email send failed" });
+    return NextResponse.json({ error: "Email send failed" }, { status: 500 });
   }
 }
